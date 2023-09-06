@@ -32,19 +32,18 @@
                     <i class="fa-solid fa-bars fa-lg" style="color: #769bdb;"></i>
                 </div>
             </div>
-                <button>
-                    <p>Nuevo Chat</p>
+                <button onclick="comenzar_chat()">
+                    <p class="text_button">Nuevo Chat</p>
                 </button>
-
             <div class="all_contacts">
-                <div class="contact_display">
+                <div class="contact_display" id="contacto_2" onclick="comenzar_chat2()">
                     <img src="assets/imgs/contacto 2.webp" alt="contacto_2">
                     <div class="text">
                         <h1>Obi</h1>
-                        <p>Disponible</p>
+                        <p>Dime?</p>
                     </div>
                 </div>
-                <div class="contact_display">
+                <div class="contact_display" id="contacto_3" onclick="comenzar_chat3()">
                     <img src="assets/imgs/contacto 3.webp" alt="contacto_3">
                     <div class="text">
                         <h1>C-3S0</h1>
@@ -52,23 +51,23 @@
                     </div>
                 </div>
 
-                <div class="contact_display">
+                <div class="contact_display" id="contacto_4"onclick="comenzar_chat4()">
                     <img src="assets/imgs/contacto 4.webp" alt="contacto_4">
                     <div class="text">
                         <h1>Ani</h1>
-                        <p>I'am bussy</p>
+                        <p>I'am bussy, dnt push me, leave me alone</p>
                     </div>
                 </div>
 
-                <div class="contact_display">
+                <div class="contact_display" id="contacto_5"onclick="comenzar_chat5()">
                     <img src="assets/imgs/contacto 5.webp" alt="contacto_5">
                     <div class="text">
                         <h1>Leia</h1>
-                        <p>Travel</p>
+                        <p>Travel, I'am sure</p>
                     </div>
 
                 </div>
-                <div class="contact_display">
+                <div class="contact_display" id="contacto_6"onclick="comenzar_chat6()">
                     <img src="assets/imgs/contacto 6.webp" alt="contacto_6">
                     <div class="text">
                         <h1>Luke</h1>
@@ -76,28 +75,28 @@
                     </div>
 
                 </div>
-                <div class="contact_display">
+                <div class="contact_display" id="contacto_7"onclick="comenzar_chat7()">
                     <img src="assets/imgs/contacto 7.webp" alt="contacto_7">
                     <div class="text">
                         <h1>Master-Class</h1>
-                        <p>Entrenando con los pibes</p>
+                        <p>Entrenando con los pibes, dime si necesitas algo</p>
                     </div>
 
                 </div>
-                <div class="contact_display">
+                <div class="contact_display" id="contacto_8"onclick="comenzar_chat8()">
                     <img src="assets/imgs/contacto 8.webp" alt="contacto_8">
                     <div class="text">
 
                         <h1>Yodi</h1>
-                        <p>Solo anulate al Uno</p>
+                        <p>Solo anulate al Uno, no está bajo tu control</p>
                     </div>
 
                 </div>
-                <div class="contact_display">
+                <div class="contact_display" id="contacto_9"onclick="comenzar_chat9()">
                     <img src="assets/imgs/contacto 9.webp" alt="contacto_9">
                     <div class="text">
                         <h1>Anónimo</h1>
-                        <p>Libre contratación</p>
+                        <p>Libre contratación, cuando puedas me pagas</p>
                     </div>
 
                 </div>
@@ -105,14 +104,27 @@
         </div>
 
 
-        <div class="principal">
+        <div class="principal" id="instruction">
             <img src="assets/imgs/Logo.webp" alt="logo">
             <h2>Comienza el networking</h2>
             <p class="instruction">Presiona el botón nuevo chat para crear a nuevas redes de contacto para la fuerza, la revolución parte contigo</p>
-
         </div>
-
+        <div class="chat-container" id="chat_init">
+            <div class="info_contact">
+            <img id="foto_perfil" src="assets/imgs/contacto 1.webp" alt="contacto_1">
+                 <p id="estado">No me rindo</p>
+            </div>
+            <div id="messageArea" class="message-area"></div>
+            <div class="input-area">
+                <form id="chatForm">
+                    <input type="text" id="inputMessage" placeholder="Escribe tu mensaje...">
+                    <button class="button_chat" type="submit">  <i class="fa-regular fa-paper-plane fa-sm"></i>
+                    </button> 
+                </form>
+            </div>
+        </div>
     </main>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

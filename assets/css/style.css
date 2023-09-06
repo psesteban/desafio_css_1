@@ -15,27 +15,26 @@ main {
 }
 
 .principal {
-  font-family: "Roboto", sans-serif;
+  font-family: "Fredoka", sans-serif;
   display: flex;
   flex: 3 1 75%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   box-shadow: -2px 0 0 0 #769bdb;
+  background-image: none;
 }
 
 .user {
-  display: flex;
+  display:flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
   padding: 1%;
   margin: 1px;
-
 }
 
 .status_user {
   display: flex;
-  flex-grow: 2;
   align-items: center;
 }
 .status_user img {
@@ -44,7 +43,6 @@ main {
 }
 .user_button {
   display: flex;
-  flex-grow: 1;
 }
 
 i {
@@ -83,6 +81,12 @@ h1 {
 p {
   margin: 0%;
   padding: 0%;
+  font-size: 1.2em;
+}
+
+.text_button {
+  font-size: 0.8em;
+
 }
 
 .menu_chat img {
@@ -91,3 +95,56 @@ p {
 .principal img {
   max-width: 25%;
 }
+
+/* Acá va el CSS del html que tiene una versión distinta con chat */
+.chat-container {
+  font-family: "Fredoka", sans-serif;
+  display: none;
+  flex: 3 1 75%;
+  flex-direction: column;
+  background-image: url(/assets/imgs/patron.webp);
+  border: 1px solid #769bdb;
+  margin: auto;
+  min-height: 100vh;
+}
+.info_contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #769bdb;
+}
+.info_contact img {
+max-width: 10vh;
+}
+.message-area {
+  flex: 1;
+  flex-direction: column-reverse; 
+  align-self: flex-end;
+  overflow-y: auto;
+  border-bottom: 1px solid #769bdb;
+}
+
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  justify-content: end;
+}
+
+#chatForm {
+  display: flex;
+}
+#inputMessage {
+  min-width: 100vh;
+}
+.button_chat {
+  padding: 1vh;
+  margin: 2px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+}
+
+
