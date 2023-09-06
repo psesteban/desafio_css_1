@@ -1,4 +1,5 @@
 main {
+  margin: 0px;
   display: flex;
   font-family: "Fredoka", sans-serif;
 }
@@ -7,7 +8,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex: 1 2 30%;
+  flex: 1 2 25%;
   box-shadow: -1px -1px -1px -2px #769bdb;
   box-sizing: border-box;
   margin: 1px;
@@ -16,7 +17,7 @@ main {
 .principal {
   font-family: "Roboto", sans-serif;
   display: flex;
-  flex: 3 1 70%;
+  flex: 3 1 75%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -26,21 +27,23 @@ main {
 .user {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 1%;
   margin: 1px;
+
 }
 
 .status_user {
   display: flex;
-  align-items: center;
   flex-grow: 2;
+  align-items: center;
 }
-
+.status_user img {
+  min-width:15%;
+  min-height: 100%;
+}
 .user_button {
   display: flex;
-  align-items: center;
   flex-grow: 1;
 }
 
@@ -52,6 +55,7 @@ button {
   display: flex;
   background-color: #041622;
   padding: 0.5em 4em;
+  margin: 1em 0px 1em 0px;
   color: aliceblue;
 }
 
@@ -69,7 +73,7 @@ background-color: #8eaee48e;
 
 
 .text {
-  font-size: 0.6em;
+  font-size: 0.5em;
 }
 
 h1 {
@@ -82,7 +86,7 @@ p {
 }
 
 .menu_chat img {
-  max-width: 15%;
+  max-width: 17%;
 }
 .principal img {
   max-width: 25%;
