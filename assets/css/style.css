@@ -102,7 +102,7 @@ p {
   display: none;
   flex: 3 1 75%;
   flex-direction: column;
-  background-image: url(/assets/imgs/patron.webp);
+  background-image: url(assets/imgs/patron.webp);
   border: 1px solid #769bdb;
   margin: auto;
   min-height: 100vh;
