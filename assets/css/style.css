@@ -1,6 +1,6 @@
 main {
-  margin: 0px;
   display: flex;
+  margin: 0px;
   font-family: "Fredoka", sans-serif;
 }
 
@@ -26,9 +26,7 @@ main {
 }
 
 .user {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: flex;
   padding: 1%;
   margin: 1px;
 }
@@ -43,6 +41,7 @@ main {
 }
 .user_button {
   display: flex;
+  align-items: center;
 }
 
 i {
